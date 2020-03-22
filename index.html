@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Login</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<!-- login form => first page -->
+	<div class="container container-grid" id="login">
+		<div class="log-left">
+			<h3 id="test">Hello, World!</h3>
+			<div>Welcome to My Website!</div><br>
+			<div><a href="#">Learn more,</a></div>
+		</div>
+		<div class="log-right">
+			<img src="img/profile.svg" alt="profile" width="100px" id="pic">
+			<form>
+				<div>
+					<label for="username">Username</label><br>
+					<input type="text" required placeholder="Username" name="username" id="log-username">
+				</div>
+				<div>
+					<label for="password">Password</label><br>
+					<input type="password" required placeholder="Password" name="password" id="log-password">
+				</div>
+				<button type="button" class="btn btn-submit" id="log-submit">Sign in</button>
+			</form>
+			<div class="signup">Don't have any account? <a href="#" id="signup">Create one,</a></div>
+		</div>
+	</div>
+	<!-- Register Form => second page -->
+	<div class="container container-grid" id="register">
+		<div class="reg-left">
+			<img src="img/profile.svg" alt="profile" width="100px">
+			<form>
+				<div>
+					<label for="username">Username</label><br>
+					<input type="text" required placeholder="Username" name="username" id="reg-username">
+				</div>
+				<div>
+					<label for="fullname">Full Name</label><br>
+					<input type="text" required placeholder="Full Name" name="fullname" id="reg-fullname">
+				</div><br>
+		</div>
+		<div class="reg-right">
+				<div>
+					<label for="email">Email</label><br>
+					<input type="email" required placeholder="Email" name="email" id="reg-email">
+				</div>
+				<div>
+					<label for="password">Password</label><br>
+					<input type="password" required placeholder="Password" name="password" id="reg-password">
+				</div><br>
+				<button type="button" class="btn btn-submit" id="reg-submit">Sign up</button>
+			</form>
+			<div class="signup">Aready have account? <a href="#" id="signin">Sign in,</a></div>
+		</div>
+	</div>
+	<!-- For Small Screen Register -->
+	<div class="container container-grid">
+		<div class="reg-sm">
+			<img src="img/profile.svg" alt="profile" width="100px">
+			<form>
+				<div>
+					<label for="username">Username</label><br>
+					<input type="text" required placeholder="Username" name="username" id="reg-username-sm">
+				</div>
+				<div>
+					<label for="fullname">Full Name</label><br>
+					<input type="text" required placeholder="Full Name" name="fullname" id="reg-fullname-sm">
+				</div>
+				<div>
+					<label for="email">Email</label><br>
+					<input type="email" required placeholder="Email" name="email" id="reg-email-sm">
+				</div>
+				<div>
+					<label for="password">Password</label>
+					<input type="password" required placeholder="Password" name="password" id="reg-password-sm">
+				</div><br>
+				<button type="button" class="btn btn-submit" id="reg-submit-sm">Sign up</button>
+			</form>
+			<div class="signup">Aready have account? <a href="#" id="signin-sm">Sign in,</a></div>
+		</div>
+	</div>
+
+	<div class="container" style="display: none; padding: 50px 150px;" id="successful">
+		<div class="success-box">
+			<img src="img/success.svg" alt="" height="100px">
+		</div><br>
+		<h3>Success !</h3>
+	</div>
+
+	<div class="container" style="display: none; padding: 50px 150px;" id="failed">
+		<div class="success-box">
+			<img src="img/fail.svg" alt="" height="100px">
+		</div><br>
+		<h3>Failed !</h3>
+	</div>
+	
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="js/app.js"></script>
+</body>
+</html>
